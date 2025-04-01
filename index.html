@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Aggiungi il CSS di Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
+        <!-- Carousel con immagine principale e frecce -->
         <div id="carousel">
             <i class="fa-solid fa-arrow-left"></i>
             <div class="gallery">
-                <!-- <figure>
-                    <img src="./img/01.jpg" alt="">
-                    <figcaption>
-                        <h2>Titolo</h2>
-                        <h3>testo</h3>
-                    </figcaption>
-                </figure> -->
+                <!-- Le immagini principali vengono inserite qui dal JavaScript -->
             </div>
             <i class="fa-solid fa-arrow-right"></i>
         </div>
-        <div id="thumbnails">
-            <!-- Anteprime immagini -->
+    </div>
+
+    <!-- Contenitore per le thumbnail sotto il carousel -->
+    <div class="thumbnails-wrapper">
+        <div class="thumbnails">
+            <!-- Le thumbnail verranno inserite qui dal JavaScript -->
         </div>
     </div>
+
+    <div class="image-description-container">
+        <div class="image-description">
+            <h3 class="description-title"></h3>
+            <p class="description-text"></p>
+        </div>
+    </div>
+    
+    <!-- Sezione mappa con OpenStreetMap -->
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="location-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="location-name"></span>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <!-- Aggiungi lo script di Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
