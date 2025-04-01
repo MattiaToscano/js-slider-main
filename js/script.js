@@ -96,7 +96,7 @@ const previousImage = () => {
 
 }
 
-// CORPO DEL PROGRAMMA
+// CORPO DEL PROGRAMMA DUX
 
 // siamo andati a renderizzare tutte le immagini
 renderImages(pics);
